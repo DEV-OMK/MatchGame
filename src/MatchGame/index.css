@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bg-container {
+  min-height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.responsive-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .responsive-container {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    width: 60%;
+  }
+}
+
+.match-img-container {
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.match-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 28px;
+  }
+}
+
+.active-tab {
+  color: #fec653;
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 2px solid #fec653;
+}
+
+@media screen and (min-width: 768px) {
+  .active-tab {
+    font-size: 30px;
+    border-bottom: 3px solid #fec653;
+  }
+}
+
+.thumbnail-list-container {
+  width: 100%;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

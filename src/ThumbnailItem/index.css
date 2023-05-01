@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.thumbnail-container {
+  width: 23%;
+  padding: 0px;
+  margin: 1%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-container {
+    width: 18%;
+  }
+}
+
+.thumbnail-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.thumbnail-image {
+  width: 100%;
+  border-radius: 6px;
+}
